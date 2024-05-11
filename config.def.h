@@ -23,6 +23,16 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
+static const char *const autostart[] = {
+	"pipewire", NULL,
+	"sxhkd", NULL,
+	"xautolock", "-time", "10", "-locker", "slock", NULL,
+	"xss-lock", "-l", "slock", NULL,
+	"xsetroot", "-name", "   |", NULL,
+	"st", NULL,
+	NULL /* terminate */
+};
+
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
